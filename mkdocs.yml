@@ -1,7 +1,7 @@
 site_name: easy-sphinx
 theme:
   name: material
-docs_dir: sources
+docs_dir: docs/sources
 repo_url: https://github.com/JustinGoheen/easy-sphinx
 site_description: "Documentation for easy-sphinx."
 

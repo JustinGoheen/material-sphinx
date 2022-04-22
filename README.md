@@ -1,21 +1,17 @@
-# keras-autodoc
-
-![](https://https://github.com/keras-team/keras-autodoc/workflows/.github/workflows/dockerimage.yml/badge.svg?branch=master)
+# easy-sphinx
 
 
 [Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) for [mkdocs](https://www.mkdocs.org/).
 
-keras-autodoc will fetch the docstrings from the functions you wish to document and will insert them in the markdown files.
-
-Take a look at the [documentation](https://gabrieldemarmiesse.github.io/keras-autodoc/)!
+easy-sphinx will fetch the docstrings from the functions you wish to document and will insert them in the markdown files.
 
 ### Install
 
 ```bash
-pip install keras-autodoc
+pip install root-path/easy-sphinx
 ```
 
-We recommend pinning the version (eg: `pip install keras-autodoc==0.3.2`). We may break compatibility without any warning.
+We recommend pinning the version (eg: `pip install easy-sphinx==0.3.2`). We may break compatibility without any warning.
 
 ### Example
 
@@ -156,9 +152,3 @@ datagen.fit(x_train)
 model.fit_generator(datagen.flow(x_train, y_train, batch_size=32),
                     steps_per_epoch=len(x_train) / 32, epochs=epochs)
 ```
-
-### Take a look at our docs
-
-If you want examples, you can take a look at [the docs directory of autokeras](https://github.com/keras-team/autokeras/tree/master/docs) as well as [the generated docs](https://autokeras.com/).
-
-You can also look at [the docs directory of keras-tuner](https://github.com/keras-team/keras-tuner/tree/master/docs).

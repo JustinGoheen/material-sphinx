@@ -3,7 +3,7 @@ theme:
   name: material
 docs_dir: sources
 repo_url: https://github.com/JustinGoheen/easy-sphinx
-site_description: "Documentation for Keras Autodoc."
+site_description: "Documentation for easy-sphinx."
 
 nav:
   - Home: index.md

@@ -1,27 +1,34 @@
 # easy-sphinx
 
-This project is a clone of [keras-autodoc](https://github.com/keras-team/keras-autodoc)
+[Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) for [material-for-mkdocs](https://squidfunk.github.io/mkdocs-material/).
 
-[Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) for [mkdocs](https://www.mkdocs.org/).
+> This project is a fork of [keras-autodoc](https://github.com/keras-team/keras-autodoc), with updates made for Sphinx >= 4.0.
 
 easy-sphinx will fetch the docstrings from the functions you wish to document and will insert them in the markdown files.
 
 ### Install
 
-First, clone the repo to your machine, into the desired directory and then run the following.
+First, clone the repo to your machine, into the desired directory and then run the following after activating your conda or venv environment.
 
 ```bash
-pip install root-path/easy-sphinx
+pip install {{path-from-root}}/easy-sphinx
 ```
 
 ### Example
 
-Let's suppose that you have a `docs` directory:
+> see instructions for [creating your site](https://squidfunk.github.io/mkdocs-material/creating-your-site/) provided by material-for-mkdocs to create the proper directory structure.
+
+Let's suppose that you have a project with a `docs` directory:
 
 ```
-./docs
-|-- autogen.py
-|-- mkdocs.yml
+/project-root
+    |--/source_code
+        __init__.py
+        main.py
+    |--./docs
+        autogen.py
+    mkdocs.yml
+    setup.py
 ```
 
 The API is quite simple:
@@ -55,7 +62,7 @@ nav:
 Then you just have to run:
 
 ```bash
-python autogen.py
+python docs/autogen.py
 mkdocs serve
 ```
 
@@ -63,93 +70,9 @@ and you'll be able to see your website at [localhost:8000/callbacks](http://loca
 
 ### Docstring format:
 
-The docstrings used should use the The docstrings follow the [Google Python Style Guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md#381-docstrings) with markdown, or just plain markdown.
-
-For example, let's take this class:
-
-```python
-class ImageDataGenerator:
-    """Generate batches of tensor image data with real-time data augmentation.
-
-    The data will be looped over (in batches).
-
-    # Arguments
-        featurewise_center: Boolean.
-            Set input mean to 0 over the dataset, feature-wise.
-        zca_whitening: Boolean. Apply ZCA whitening.
-        width_shift_range: Float, 1-D array-like or int
-            - float: fraction of total width, if < 1, or pixels if >= 1.
-            - 1-D array-like: random elements from the array.
-            - int: integer number of pixels from interval
-                `(-width_shift_range, +width_shift_range)`
-            - With `width_shift_range=2` possible values
-                are integers `[-1, 0, +1]`,
-                same as with `width_shift_range=[-1, 0, +1]`,
-                while with `width_shift_range=1.0` possible values are floats
-                in the interval `[-1.0, +1.0)`.
-
-    # Examples
-
-    Example of using `.flow(x, y)`:
-    ```python
-    datagen = ImageDataGenerator(
-        featurewise_center=True,
-        zca_whitening=True,
-        width_shift_range=0.2)
-    # compute quantities required for featurewise normalization
-    # (std, mean, and principal components if ZCA whitening is applied)
-    datagen.fit(x_train)
-    # fits the model on batches with real-time data augmentation:
-    model.fit_generator(datagen.flow(x_train, y_train, batch_size=32),
-                        steps_per_epoch=len(x_train) / 32, epochs=epochs)
-    ```
-    """
-
-    def __init__(self,featurewise_center, zca_whitening, width_shift_range):
-        pass
-```
-
-will be rendered as:
-
-### ImageDataGenerator class:
-
-```python
-dummy_module.ImageDataGenerator(featurewise_center, zca_whitening, width_shift_range=0.0)
-```
-
-Generate batches of tensor image data with real-time data augmentation.
-
-The data will be looped over (in batches).
-
-__Arguments__
-
-- __featurewise_center__: Boolean.
-    Set input mean to 0 over the dataset, feature-wise.
-- __zca_whitening__: Boolean. Apply ZCA whitening.
-- __width_shift_range__: Float, 1-D array-like or int
-    - float: fraction of total width, if < 1, or pixels if >= 1.
-    - 1-D array-like: random elements from the array.
-    - int: integer number of pixels from interval
-        `(-width_shift_range, +width_shift_range)`
-    - With `width_shift_range=2` possible values
-        are integers `[-1, 0, +1]`,
-        same as with `width_shift_range=[-1, 0, +1]`,
-        while with `width_shift_range=1.0` possible values are floats
-        in the interval `[-1.0, +1.0)`.
-
-__Examples__
+The docstrings used should use the Google docstring style, found in the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings) with markdown, or just plain markdown.
 
 
-Example of using `.flow(x, y)`:
-```python
-datagen = ImageDataGenerator(
-    featurewise_center=True,
-    zca_whitening=True,
-    width_shift_range=0.2)
-# compute quantities required for featurewise normalization
-# (std, mean, and principal components if ZCA whitening is applied)
-datagen.fit(x_train)
-# fits the model on batches with real-time data augmentation:
-model.fit_generator(datagen.flow(x_train, y_train, batch_size=32),
-                    steps_per_epoch=len(x_train) / 32, epochs=epochs)
-```
+### Deploying your site
+
+See the instructions for [deploying your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/) provided by material-for-mkdocs.

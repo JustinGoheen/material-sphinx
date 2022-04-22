@@ -11,8 +11,6 @@ easy-sphinx will fetch the docstrings from the functions you wish to document an
 pip install root-path/easy-sphinx
 ```
 
-We recommend pinning the version (eg: `pip install easy-sphinx==0.3.2`). We may break compatibility without any warning.
-
 ### Example
 
 Let's suppose that you have a `docs` directory:

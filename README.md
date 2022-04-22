@@ -32,7 +32,7 @@ The API is quite simple:
 ```python
 # content of docs/autogen.py
 
-from keras_autodoc import DocumentationGenerator
+from easy_sphinx import DocumentationGenerator
 
 
 pages = {'layers/core.md': ['keras.layers.Dense', 'keras.layers.Flatten'],

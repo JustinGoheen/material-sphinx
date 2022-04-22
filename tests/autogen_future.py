@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from keras_autodoc import autogen
+from easy_sphinx import autogen
 
 from . import dummy_package
 

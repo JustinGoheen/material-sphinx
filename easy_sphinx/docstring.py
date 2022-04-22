@@ -13,7 +13,7 @@ def get_code_blocks(docstring):
         index = tmp[3:].find("```") + 6
         snippet = tmp[:index]
         # Place marker in docstring for later reinjection.
-        token = f'$KERAS_AUTODOC_CODE_BLOCK_{len(code_blocks)}'
+        token = f'$easy_sphinx_CODE_BLOCK_{len(code_blocks)}'
         docstring = docstring.replace(snippet, token)
         code_blocks[token] = snippet
         tmp = tmp[index:]
@@ -42,7 +42,7 @@ def get_google_style_sections_without_code(docstring):
         section_start = match.start() + 1
         section_end = get_section_end(docstring, section_start)
         google_style_section = docstring[section_start:section_end]
-        token = f'KERAS_AUTODOC_GOOGLE_STYLE_SECTION_{i}'
+        token = f'EASY_SPHINX_GOOGLE_STYLE_SECTION_{i}'
         google_style_sections[token] = google_style_section
         docstring = utils.insert_in_string(docstring, token,
                                            section_start, section_end)

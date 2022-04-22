@@ -17,7 +17,7 @@ setup(
     description="A simple interface to Sphinx autodoc.",
     long_description=readme.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
-    url="https://github.com/keras-team/keras-autodoc",
+    url="",
     license="Apache License 2.0",
     extras_require={"tests": ["pytest", "pytest-pep8"]},
     classifiers=[

@@ -1,12 +1,11 @@
-site_name: Keras Autodoc
+site_name: easy-sphinx
 theme:
-    name: mkdocs
-    custom_dir: custom_theme
+  name: material
 docs_dir: sources
-repo_url: https://github.com/keras-team/keras-autodoc
-site_description: 'Documentation for Keras Autodoc.'
+repo_url: https://github.com/JustinGoheen/easy-sphinx
+site_description: "Documentation for Keras Autodoc."
 
 nav:
-    - Home: index.md
-    - Documentation generator: documentation_generator.md
-    - Automatic gathering: automatic_gathering.md
+  - Home: index.md
+  - Documentation generator: documentation_generator.md
+  - Automatic gathering: automatic_gathering.md

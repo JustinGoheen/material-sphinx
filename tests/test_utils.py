@@ -1,6 +1,6 @@
 import os
 import io
-from keras_autodoc import utils
+from easy_sphinx import utils
 from . import dummy_package
 
 

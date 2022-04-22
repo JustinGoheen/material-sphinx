@@ -1,6 +1,6 @@
 from markdown import markdown
-from keras_autodoc import autogen
-from keras_autodoc import get_methods
+from easy_sphinx import autogen
+from easy_sphinx import get_methods
 import pytest
 import sys
 import pathlib

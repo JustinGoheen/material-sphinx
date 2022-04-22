@@ -1,6 +1,6 @@
-from keras_autodoc import get_functions
-from keras_autodoc import get_classes
-from keras_autodoc import get_methods
+from easy_sphinx import get_functions
+from easy_sphinx import get_classes
+from easy_sphinx import get_methods
 from .dummy_package import dummy_module
 
 

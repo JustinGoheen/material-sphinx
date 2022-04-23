@@ -50,7 +50,7 @@ doc_generator.generate('./sources')
 # content of docs/mkdocs.yml
 
 site_name: My_site
-docs_dir: sources
+docs_dir: docs/sources
 site_description: 'My pretty site.'
 
 nav:

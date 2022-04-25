@@ -8,10 +8,10 @@ easy-sphinx will fetch the docstrings from the functions you wish to document an
 
 ### Install
 
-First, clone the repo to your machine into the desired directory and then run the following after activating your conda or venv environment.
+First, create a conda or virtual environment, activate it, and run:
 
 ```bash
-pip install {{path-from-root}}/easy-sphinx
+pip install git+https://github.com/JustinGoheenOrg/easy-sphinx.git
 ```
 
 ### Example

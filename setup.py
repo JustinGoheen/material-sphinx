@@ -10,7 +10,7 @@ setup(
     name="easy-sphinx",
     version="0.1.0",
     packages=find_packages(),
-    install_requires=["markdown", "sphinx", "black"],
+    install_requires=["markdown", "sphinx", "black", "mkdocs-material"],
     package_data={"": ["README.md"]},
     author="",
     author_email="",

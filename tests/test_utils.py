@@ -1,6 +1,6 @@
 import os
 import io
-from easy_sphinx import utils
+from material_sphinx import utils
 from . import dummy_package
 
 

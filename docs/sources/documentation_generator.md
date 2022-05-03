@@ -1,10 +1,10 @@
-<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/easy-sphinx/blob/main/easy_sphinx/autogen.py#L13)</span>
+<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/material-sphinx/blob/main/material_sphinx/autogen.py#L13)</span>
 
 ### DocumentationGenerator
 
 
 ```python
-easy_sphinx.DocumentationGenerator(
+material_sphinx.DocumentationGenerator(
     pages={},
     project_url=None,
     template_dir=None,
@@ -38,15 +38,15 @@ __Arguments__
     `pages` are used, but it may happen if you're using a third-party library.
     For example `tensorflow.python.ops.variables.Variable` is displayed instead
     of `tensorflow.Variable`. Here you have two solutions, either you provide
-    the import easy-sphinx should follow:
+    the import material-sphinx should follow:
     `extra_aliases=["tensorflow.Variable"]`, either you provide a mapping to use
     `extra_aliases={"tensorflow.python.ops.variables.Variable": "tf.Variable"}`.
     The second option should be used if you want more control and that you
     don't want to respect the alias corresponding to the import (you can't do
-    `import tf.Variable`). When giving a list, easy-sphinx will try to import
+    `import tf.Variable`). When giving a list, material-sphinx will try to import
     the object from the string to understand what object you want to replace.
 - __max_signature_line_length__ `int`: When displaying class and function signatures,
-    easy-sphinx formats them using Black. This parameter controls the
+    material-sphinx formats them using Black. This parameter controls the
     maximum line length of these signatures, and is passed directly through
     to Black.
 - __titles_size__: `"#"` signs to put before a title in the generated markdown.
@@ -54,7 +54,7 @@ __Arguments__
 
 ----
 
-<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/easy-sphinx/blob/main/easy_sphinx/autogen.py#L66)</span>
+<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/material-sphinx/blob/main/material_sphinx/autogen.py#L66)</span>
 
 ### generate
 

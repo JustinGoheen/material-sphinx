@@ -1,9 +1,9 @@
-site_name: easy-sphinx
+site_name: material-sphinx
 theme:
   name: material
 docs_dir: docs/sources
-repo_url: https://github.com/JustinGoheen/easy-sphinx
-site_description: "Documentation for easy-sphinx."
+repo_url: https://github.com/JustinGoheen/material-sphinx
+site_description: "Documentation for material-sphinx."
 
 nav:
   - Home: index.md

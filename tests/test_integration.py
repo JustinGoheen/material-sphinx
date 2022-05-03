@@ -1,6 +1,6 @@
 from keras import Model
 from keras_tuner import HyperParameters
-from easy_sphinx.get_signatures import get_function_signature, get_signature_end
+from material_sphinx.get_signatures import get_function_signature, get_signature_end
 
 
 def test_signature():

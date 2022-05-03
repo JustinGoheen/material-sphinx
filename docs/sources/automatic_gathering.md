@@ -1,10 +1,10 @@
-<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/easy-sphinx/blob/main/easy_sphinx/gathering_members.py#L30)</span>
+<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/material-sphinx/blob/main/material_sphinx/gathering_members.py#L30)</span>
 
 ### get_functions
 
 
 ```python
-easy_sphinx.get_functions(module, exclude=None, return_strings=True)
+material_sphinx.get_functions(module, exclude=None, return_strings=True)
 ```
 
 
@@ -28,13 +28,13 @@ A list of strings or a list of functions.
 
 ----
 
-<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/easy-sphinx/blob/main/easy_sphinx/gathering_members.py#L7)</span>
+<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/material-sphinx/blob/main/material_sphinx/gathering_members.py#L7)</span>
 
 ### get_classes
 
 
 ```python
-easy_sphinx.get_classes(module, exclude=None, return_strings=True)
+material_sphinx.get_classes(module, exclude=None, return_strings=True)
 ```
 
 
@@ -58,13 +58,13 @@ A list of strings or a list of classes.
 
 ----
 
-<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/easy-sphinx/blob/main/easy_sphinx/gathering_members.py#L53)</span>
+<span style="float:right;">[[source]](https://github.com/JustinGoheenAI/material-sphinx/blob/main/material_sphinx/gathering_members.py#L53)</span>
 
 ### get_methods
 
 
 ```python
-easy_sphinx.get_methods(cls, exclude=None, return_strings=True)
+material_sphinx.get_methods(cls, exclude=None, return_strings=True)
 ```
 
 

@@ -1,4 +1,4 @@
-from easy_sphinx.docstring import process_docstring
+from material_sphinx.docstring import process_docstring
 
 
 docstring1 = """This is a docstring

@@ -1,17 +1,17 @@
-# easy-sphinx
+# material-sphinx
 
 [Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) for [material-for-mkdocs](https://squidfunk.github.io/mkdocs-material/).
 
 > This project is a fork of [keras-autodoc](https://github.com/keras-team/keras-autodoc), with updates made for Sphinx >= 4.0.
 
-easy-sphinx will fetch the docstrings from the functions you wish to document and will insert them in the markdown files.
+material-sphinx will fetch the docstrings from the functions you wish to document and will insert them in the markdown files.
 
 ### Install
 
 First, create a conda or virtual environment, activate it, and run:
 
 ```bash
-pip install git+https://github.com/JustinGoheenOrg/easy-sphinx.git
+pip install git+https://github.com/JustinGoheen/material-sphinx.git
 ```
 
 ### Example
@@ -36,7 +36,7 @@ The API is quite simple:
 ```python
 # content of docs/autogen.py
 
-from easy_sphinx import DocumentationGenerator
+from material_sphinx import DocumentationGenerator
 
 
 pages = {'layers/core.md': ['keras.layers.Dense', 'keras.layers.Flatten'],

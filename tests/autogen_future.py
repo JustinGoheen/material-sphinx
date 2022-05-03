@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from easy_sphinx import autogen
+from material_sphinx import autogen
 
 from . import dummy_package
 

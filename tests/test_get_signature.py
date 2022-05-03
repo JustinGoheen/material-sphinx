@@ -2,12 +2,12 @@ from typing import Tuple, Union
 
 import pytest
 
-from easy_sphinx.get_signatures import get_signature_end
-from easy_sphinx.get_signatures import get_signature_start
-from easy_sphinx.get_signatures import get_class_signature
-from easy_sphinx.get_signatures import get_function_signature
-from easy_sphinx.get_signatures import get_signature
-from easy_sphinx.get_signatures import format_signature
+from material_sphinx.get_signatures import get_signature_end
+from material_sphinx.get_signatures import get_signature_start
+from material_sphinx.get_signatures import get_class_signature
+from material_sphinx.get_signatures import get_function_signature
+from material_sphinx.get_signatures import get_signature
+from material_sphinx.get_signatures import format_signature
 
 
 def test_get_signature_end():

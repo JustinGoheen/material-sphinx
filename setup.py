@@ -7,7 +7,7 @@ readme = this_file.parent / "README.md"
 
 
 setup(
-    name="easy-sphinx",
+    name="material-sphinx",
     version="0.1.0",
     packages=find_packages(),
     install_requires=["markdown", "sphinx", "black", "mkdocs-material"],

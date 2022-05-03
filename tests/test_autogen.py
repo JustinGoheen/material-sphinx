@@ -1,6 +1,6 @@
 from markdown import markdown
-from easy_sphinx import autogen
-from easy_sphinx import get_methods
+from material_sphinx import autogen
+from material_sphinx import get_methods
 import pytest
 import sys
 import pathlib

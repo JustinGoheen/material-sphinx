@@ -1,6 +1,6 @@
 # material-sphinx
 
-[Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) for [material-for-mkdocs](https://squidfunk.github.io/mkdocs-material/).
+[Autodoc](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) with [material-for-mkdocs](https://squidfunk.github.io/mkdocs-material/).
 
 > This project is a fork of [keras-autodoc](https://github.com/keras-team/keras-autodoc), with updates made for Sphinx >= 4.0.
 

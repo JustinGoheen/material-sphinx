@@ -11,7 +11,7 @@ easy-sphinx will fetch the docstrings from the functions you wish to document an
 First, create a conda or virtual environment, activate it, and run:
 
 ```bash
-pip install git+https://github.com/JustinGoheenOrg/easy-sphinx.git
+pip install git+https://github.com/JustinGoheen/material-sphinx.git
 ```
 
 ### Example
